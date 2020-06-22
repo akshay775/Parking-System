@@ -84,6 +84,7 @@ NODE * removeVehicle(NODE *cur,int slot)
 	}
 	else
 	printf("NO Slot found\n");
+	printf("all the slots are full");
 }
 
 
@@ -103,7 +104,7 @@ void parkingArea()
 		}
 	}
 	else
-	printf("\n\t**Every slot is Empty**\n");
+	printf("all slots empty");
 }
 
 void DisplayPrice()
@@ -122,7 +123,7 @@ void DisplayPrice()
 	printf("\t-------------------------------\n");
 	printf("\t| 5.  | 12-Seater     |  400  |\n");
 	printf("\t-------------------------------\n");	
-	printf("\nAdditional Charges for extra time is same for all,<100 per half-hour>\n");
+	printf("\nCharges for extra time is same for all,<100 per half-hour>\n");
 }
 
 int price(int ch)
@@ -322,10 +323,10 @@ int main()
 		 goto abc;
 	 }
 	vehicleParking();
-	printf("\n**THANK YOU HAVE A NICE  DAY**\n");	
+	printf("\n**THANK YOU**\n");	
 	break;
 	case 'Y': exiting();
-	printf("\n**THANK YOU HAVE A NICE  DAY**\n");	
+	printf("\n**THANK YOU**\n");	
 	break;
 	case 'D':parkingArea();
 	break;
